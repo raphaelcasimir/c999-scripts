@@ -55,7 +55,7 @@ echo "Done installing Docker"
 # End Docker
 
 # Essential apps
-sudo apt-get install -y git htop python3-pip spyder3 ncdu zenmap default-jre default-jdk ant build-essential
+sudo apt-get install -y git gimp htop python3-pip spyder3 ncdu zenmap default-jre default-jdk ant build-essential
 
 # Sublime
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
