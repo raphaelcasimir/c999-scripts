@@ -6,4 +6,4 @@ Scripts with cornichons aigres-doux (à la Russe) and Cosmogol 999.
 _Figure 1: a cornichon aigres-doux à la Russe_
 
 Licence is GPL v2 unless stated otherwise.
-Most of the time it will be stated "Do What the Fuck You Want to Public License".
+Most of the time it will be stated "WTFPL" or MIT.
