@@ -80,7 +80,7 @@ echo "Done installing AppImages"
 
 
 # Build and install Arduino
-getTxz arduino/Arduino
+getTxz "arduino/Arduino"
 
 cd Arduino*
 
