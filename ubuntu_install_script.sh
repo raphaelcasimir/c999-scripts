@@ -55,7 +55,22 @@ echo "Done installing Docker"
 # End Docker
 
 # Essential apps
-sudo apt-get install -y git gimp htop python3-pip spyder3 ncdu zenmap default-jre default-jdk ant build-essential
+sudo apt-get install -y git gimp vlc octave htop python3-pip spyder3 ncdu zenmap default-jre default-jdk ant build-essential exfat-fuse exfat-utils
+pip3 install matplotlib
+pip3 install numpy
+
+# Brave browser
+curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+source /etc/os-release
+echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ $UBUNTU_CODENAME main" | sudo tee /etc/apt/sources.list.d/brave-browser-release-${UBUNTU_CODENAME}.list
+sudo apt update
+sudo apt install brave-keyring brave-browser
+
+# Virtualbox
+wget -q -O- http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc | sudo apt-key add -
+sudo add-apt-repository "deb https://download.virtualbox.org/virtualbox/debian disco contrib"
+sudo apt update
+sudo apt install virtualbox
 
 # Sublime
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
